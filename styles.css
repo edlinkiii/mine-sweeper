@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+main {
+    background-color: gray;
+    margin: 20px auto;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.cell {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #888;
+    background-color: #bbb;
+    font-weight: bold;
+}
+.unclicked {
+    line-height: 20px;
+    background-color: #ddd;
+    cursor: pointer;
+    border: 5px solid #ccc;
+    border-style: outset;
+}
+.mine {
+    color: #000;
+    font-size: 2.5rem;
+    padding-top: 5px;
+}
+.number {
+    color: blue;
+}
+.flag {
+    color: green;
+}
+.mine.exploded {
+    background-color: red;
+    color: black;
+}
+.number.flag {
+    text-decoration: line-through;
+    color: red;
+}
+.mine.flag {
+    color: green;
+}
